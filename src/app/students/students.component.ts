@@ -60,7 +60,7 @@ save(){
     next: data => this.students.push(data)
   });
 }
-
+this.formGroupStudent.reset();
 }
 delete(student:Student){
   this.service.delete(student).subscribe({
