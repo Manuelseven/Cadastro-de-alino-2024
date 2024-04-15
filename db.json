@@ -1,9 +1,14 @@
 {
   "students": [
     {
+      "id": 1,
+      "name": "Manuel Ítalo ",
+      "course": "Ads"
+    },
+    {
       "id": 2,
-      "name": "Manuel Ítal",
-      "course": "teste"
+      "name": "teste",
+      "course": "Ads"
     }
   ]
 }

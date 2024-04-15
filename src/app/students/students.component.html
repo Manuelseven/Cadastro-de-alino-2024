@@ -10,12 +10,21 @@
           <input type="text" class="form-control" id="nome" 
           formControlName="name"
           />
+          <small *ngif="submited && name.hasError('minlength')" class="text-danger">
+            * O nome tem que ter no mínimo 3 caracteres!
+          </small>
+          <small *ngif="submited && name.hasError('required')" class="text-danger">
+            * O nome do curso é requerido!
+          </small>
         </div>
         <div class="mb-3">
           <label for="curso" class="form-label">Curso</label>
           <input type="text" class="form-control" id="curso" 
           formControlName="course"
           />
+          <small *ngif="submited && course.hasError('required')" class="text-danger">
+            * O curso é requerido!
+            </small>
         </div>
         <button type="submit" class="btn btn-primary"
         (click)="save()"
